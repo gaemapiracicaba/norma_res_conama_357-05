@@ -27,7 +27,7 @@ O projeto objetiva disponibilizar os parâmetros de qualidade em formato tabular
 <br>
 
 ```bash
-pip install conama-357 --upgrade
+pip3 install conama-357 --upgrade
 ```
 
 <br>
@@ -48,9 +48,17 @@ df_357, list_classes = conama_357.get_parameters()
 df_357, list_parametrs = conama_357.filter_by_classe(df_357, classe='Classe 2')
 
 # Filter Data by "Parâmetro"
-dict_357 = filter_by_parameters(df_357, parametro='Oxigênio Dissolvido')
+dict_357 = conama_357.filter_by_parameters(df_357, parametro='Oxigênio Dissolvido')
 print(dict_357)
 ```
+
+<br>
+
+-----
+
+### Testes
+
+Caso queira testar, segue um [*Google Colab*](https://colab.research.google.com/drive/1pImzgGr7pQF5TkbA3WOSC-0qqFuojwiK?usp=sharing).
 
 <br>
 
@@ -72,4 +80,3 @@ print(dict_357)
 12. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
 13. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
 14. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)
-
