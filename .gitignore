@@ -1,7 +1,5 @@
-#
-
 # Git Actions
-.github/
+#.github/
 
 # IDEs
 .idea/
