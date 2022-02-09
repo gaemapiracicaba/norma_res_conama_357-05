@@ -1,6 +1,8 @@
 # Resolução CONAMA 357-05
 
-[![🐍 Publish Python distributions to PyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml)  [![🐍 Publish Python distributions to TestPyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml)
+[![🐍 Publish Python distributions to PyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml)
+
+[![🐍 Publish Python distributions to TestPyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml)
 
 <br>
 
