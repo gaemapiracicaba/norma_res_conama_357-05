@@ -8,12 +8,24 @@ A Resolução sofreu algumas alterações, por exemplo pela Resolução CONAMA 4
 
 <br>
 
-**Padrão de Qualidade**
+**Padrão de Qualidade em Águas Doces**
 
-- Artigo 14: Curso d'água Classe 1, em Águas Doces
-- Artigo 15: Curso d'água Classe 2, em Águas Doces
-- Artigo 16: Curso d'água Classe 3, em Águas Doces
-- Artigo 17: Curso d'água Classe 4, em Águas Doces
+- Artigo 14: Curso d'água Classe 1
+- Artigo 15: Curso d'água Classe 2
+- Artigo 16: Curso d'água Classe 3
+- Artigo 17: Curso d'água Classe 4
+
+<br>
+
+**Padrão de Qualidade em Águas Salinas**
+
+- ...
+
+<br>
+
+**Padrão de Qualidade em Águas Salobras**
+
+- ...
 
 <br>
 
@@ -59,6 +71,10 @@ df_357, list_parametros = conama_357.filter_by_classe(df_357, classe='Classe 2')
 # Filter Data by "Parâmetro"
 dict_357 = conama_357.filter_by_parameters(df_357, parametro='Oxigênio Dissolvido')
 print(dict_357)
+
+# Filter Data by "Parâmetro", quando tem condições distintas!
+dict_357 = conama_357.filter_by_parameters(df_357, parametro='Fósforo Total', condicao=1)
+print(dict_357)
 ```
 
 <br>
@@ -75,12 +91,10 @@ Caso queira testar, segue um [*Google Colab*](https://colab.research.google.com/
 
 ### *TODO*
 
-1. *Scripts*
-2. Desenvolver *setup*
-3. Compilar: Padrão de Qualidade para Classe 1, em Águas Doces onde ocorre pesca ou cultivo de organismo para fins de consumo intensivo (Artigo 14)
-4. Compilar: Padrão de Qualidade para Classe 1, em Águas Salinas (Artigo 18)
-5. Compilar: Padrão de Qualidade para Classe 2, em Águas Salinas (Artigo 19)
-6. Compilar: Padrão de Qualidade para Classe 3, em Águas Salinas (Artigo 20)
-7. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
-8. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
-9. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)
+1. Compilar: Padrão de Qualidade para Classe 1, em Águas Doces onde ocorre pesca ou cultivo de organismo para fins de consumo intensivo (Artigo 14)
+2. Compilar: Padrão de Qualidade para Classe 1, em Águas Salinas (Artigo 18)
+3. Compilar: Padrão de Qualidade para Classe 2, em Águas Salinas (Artigo 19)
+4. Compilar: Padrão de Qualidade para Classe 3, em Águas Salinas (Artigo 20)
+5. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
+6. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
+7. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)

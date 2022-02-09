@@ -2,7 +2,6 @@
 # coding: utf-8
 
 import os
-import json
 import pprint
 import pandas as pd
 from collections import OrderedDict
