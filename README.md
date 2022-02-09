@@ -10,7 +10,16 @@ A Resolução sofreu algumas alterações, por exemplo pela Resolução CONAMA 4
 
 **Padrão de Qualidade**
 
-- Artigo X: Curso d'água de Classe X
+- Artigo 14: Curso d'água Classe 1, em Águas Doces
+- Artigo 15: Curso d'água Classe 2, em Águas Doces
+- Artigo 16: Curso d'água Classe 3, em Águas Doces
+- Artigo 17: Curso d'água Classe 4, em Águas Doces
+
+<br>
+
+**Padrão de Lançamento**
+
+- Artigo 34: Padrão de Lançamento
 
 ----
 
@@ -45,7 +54,7 @@ from normas import conama_357
 df_357, list_classes = conama_357.get_parameters()
 
 # Filter Data by "Classe"
-df_357, list_parametrs = conama_357.filter_by_classe(df_357, classe='Classe 2')
+df_357, list_parametros = conama_357.filter_by_classe(df_357, classe='Classe 2')
 
 # Filter Data by "Parâmetro"
 dict_357 = conama_357.filter_by_parameters(df_357, parametro='Oxigênio Dissolvido')
@@ -66,17 +75,12 @@ Caso queira testar, segue um [*Google Colab*](https://colab.research.google.com/
 
 ### *TODO*
 
-1. <strike>Compilar: Padrão de Qualidade para Classe 1, em Águas Doces (Artigo 14)</strike>
-2. <strike>Compilar: Padrão de Qualidade para Classe 2, em Águas Doces (Artigo 15)</strike>
-3. <strike>Compilar: Padrão de Qualidade para Classe 3, em Águas Doces (Artigo 16)</strike>
-4. <strike>Compilar: Padrão de Qualidade para Classe 4, em Águas Doces (Artigo 17)</strike>
-5. <strike>Compilar: Padrão de Lançamento (Artigo 34)</strike>
-6. *Scripts*
-7. Desenvolver *setup*
-8. Compilar: Padrão de Qualidade para Classe 1, em Águas Doces onde ocorre pesca ou cultivo de organismo para fins de consumo intensivo (Artigo 14)
-9. Compilar: Padrão de Qualidade para Classe 1, em Águas Salinas (Artigo 18)
-10. Compilar: Padrão de Qualidade para Classe 2, em Águas Salinas (Artigo 19)
-11. Compilar: Padrão de Qualidade para Classe 3, em Águas Salinas (Artigo 20)
-12. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
-13. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
-14. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)
+1. *Scripts*
+2. Desenvolver *setup*
+3. Compilar: Padrão de Qualidade para Classe 1, em Águas Doces onde ocorre pesca ou cultivo de organismo para fins de consumo intensivo (Artigo 14)
+4. Compilar: Padrão de Qualidade para Classe 1, em Águas Salinas (Artigo 18)
+5. Compilar: Padrão de Qualidade para Classe 2, em Águas Salinas (Artigo 19)
+6. Compilar: Padrão de Qualidade para Classe 3, em Águas Salinas (Artigo 20)
+7. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
+8. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
+9. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)
