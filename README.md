@@ -5,7 +5,7 @@
 
 <br>
 
-Por meio da [Resolução CONAMA 357](https://www.icmbio.gov.br/cepsul/images/stories/legislacao/Resolucao/2005/res_conama_357_2005_classificacao_corpos_agua_rtfcda_altrd_res_393_2007_397_2008_410_2009_430_2011.pdf), de 17.03.2005, que *"dispõe sobre a classificação dos corpos de água e diretrizes ambientais para o seu enquadramento, bem como estabelece as condições e padrões de lançamento de efluentes, e dá outras providências"*, são apresentados os padrões de qualidade de águas interiores.
+Por meio da [Resolução CONAMA nº 357](https://www.icmbio.gov.br/cepsul/images/stories/legislacao/Resolucao/2005/res_conama_357_2005_classificacao_corpos_agua_rtfcda_altrd_res_393_2007_397_2008_410_2009_430_2011.pdf), de 17.03.2005, que *"dispõe sobre a classificação dos corpos de água e diretrizes ambientais para o seu enquadramento, bem como estabelece as condições e padrões de lançamento de efluentes, e dá outras providências"*, são apresentados os padrões de qualidade de águas interiores.
 
 A Resolução sofreu algumas alterações, por exemplo pela Resolução CONAMA 430, que revogou o artigo 24, que trata de lançamento de efluentes em curso d´água (corpo receptor).
 
