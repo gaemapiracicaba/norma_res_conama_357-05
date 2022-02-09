@@ -2,6 +2,7 @@
 # coding: utf-8
 
 import os
+import json
 import pprint
 import pandas as pd
 from collections import OrderedDict
@@ -49,19 +50,37 @@ def filter_by_classe(df_357, classe):
     return df_357, list_parametros
 
 
-def filter_by_parameters(df_357, parametro):
+def filter_by_parameters(df_357, parametro, condicao=None):
     # Filter dataframe by Parametro
     df_357 = df_357.loc[(df_357['parametro_descricao'] == parametro)]
+    
+    # Condição
+    array = df_357['condicao'].values
+    dict_condicao = dict(enumerate(array.flatten(), 1))    
 
     # Check and Get Results
-    if len(df_357) == 1:
+    if len(df_357) == 1 and len(array) == 1:
         dict_357 = df_357.to_dict(orient='records')[0]
         dict_357 = OrderedDict(sorted(dict_357.items(), key=lambda x: df_357.columns.get_loc(x[0])))
         return dict_357
+    
+    elif len(df_357) > 1 and len(array) > 1 and condicao is not None:
+        try:
+            # Filtra a Condição
+            #condicao = df_357['condicao'].values[condicao]
+            df_357 = df_357.loc[(df_357['condicao'] == dict_condicao[int(condicao)])]
+            dict_357 = df_357.to_dict(orient='records')[0]
+            dict_357 = OrderedDict(sorted(dict_357.items(), key=lambda x: df_357.columns.get_loc(x[0])))        
+            return dict_357
+        except Exception as e:
+            #print(e)
+            print('A condição definida foi "{}".\nAs opções possíveis são:\n'.format(condicao))
+            print(*('{} - {}'.format(k, v) for k,v in dict_condicao.items()), sep='\n')
+    
     else:
         #TODO: Ajustar condições
-        print('Tem mais de um registro de "{}". Específicar condição!'.format(parametro))
-        return 'erro'
+        print('Parâmetro "{}" tem mais de um registro.\nFaz-se necessário definir condição!\n'.format(parametro))
+        print(*('{} - {}'.format(k, v) for k,v in dict_condicao.items()), sep='\n')
 
 
 def set_type_desconformidade(dict_357):
