@@ -10,14 +10,15 @@ from collections import OrderedDict
 def get_parameters():
     # Read Data
     try:
+        #print('Read local table')
         df_357 = pd.read_excel(
             io=os.path.join(os.path.dirname(__file__), 'data', 'tab_conama_357.xlsx'),
             sheet_name='conama_357',
             index_col=0,
         )
     except Exception as e:
-        print(e, '\n')
-        print('Read table from GitHub')
+        #print(e, '\n')
+        #print('Read table from GitHub')
         df_357 = pd.read_excel(
             io='https://raw.githubusercontent.com/gaemapiracicaba/norma_res_conama_357-05/main/src/normas/data/tab_conama_357.xlsx',
             sheet_name='conama_357',
@@ -31,8 +32,7 @@ def get_parameters():
     # Classes
     list_classes = list(set(df_357['padrao_qualidade']))
     list_classes = [x for x in list_classes if pd.notnull(x)]
-    list_classes.sort()
-    pprint.pprint(list_classes)
+    list_classes.sort()    
 
     return df_357, list_classes
 
@@ -45,7 +45,6 @@ def filter_by_classe(df_357, classe):
     list_parametros = list(set(df_357['parametro_descricao']))
     list_parametros = [x for x in list_parametros if pd.notnull(x)]
     list_parametros.sort()
-    pprint.pprint(list_parametros)
     return df_357, list_parametros
 
 
