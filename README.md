@@ -1,7 +1,10 @@
 # Resolução CONAMA 357-05
 
-[![🐍 Publish Python distributions to PyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml) <br>
+[![🐍 Publish Python distributions to PyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-pypi.yml)
+<br>
 [![🐍 Publish Python distributions to TestPyPI](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml/badge.svg)](https://github.com/gaemapiracicaba/norma_res_conama_357-05/actions/workflows/publish-to-test-pypi.yml)
+<br>
+[![Downloads](https://pepy.tech/badge/conama-357)](https://pepy.tech/project/conama-357)
 
 <br>
 
@@ -101,3 +104,4 @@ Caso queira testar, segue um [*Google Colab*](https://colab.research.google.com/
 5. Compilar: Padrão de Qualidade para Classe 1, em Águas Salobras (Artigo 21)
 6. Compilar: Padrão de Qualidade para Classe 2, em Águas Salobras (Artigo 22)
 7. Compilar: Padrão de Qualidade para Classe 3, em Águas Salobras (Artigo 23)
+8. Avaliar CONAMA_RES_CONS_2008_397
